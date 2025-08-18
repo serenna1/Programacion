@@ -14,7 +14,7 @@
 
 let signo = "#";
 let signo2 = "#";
-let acumulador=0;
+
 console.log(signo)
 for (let i = 0; i <= 6; i ++){
     signo += signo2;

@@ -114,5 +114,6 @@ switch (prompt("Como esta el clima?")) {
     break;
 }
     */
-   //ejercicios del cap estructura del programa 
+ 
+   
    
