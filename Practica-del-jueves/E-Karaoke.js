@@ -17,23 +17,14 @@ function devolverVocales(frase) {
       }
     }
   }
-  console.log(newArray);
+  return newArray;
 }
-devolverVocales("hola ea");
+devolverVocales("hola ea"); //[ 'o', 'a', 'e', 'a' ]
 
-function devolverVocalCantidad(frase) {
-  let vocales = ["a", "A", "e", "E", "i", "I", "o", "O", "u", "U"];
-  let cantidadDeVocales = 0;
-  for (pos of frase) {
-    for (let i = 0; i < vocales.length; i++) {
-      if (pos === vocales[i]) {
-        cantidadDeVocales++;
-      }
-    }
-  }
-  console.log(`las cantidades de vocales son: ${cantidadDeVocales}`);
+function devolverVocalCantidad(array) {
+  return array.length;
 }
-devolverVocalCantidad("hola ea");
+console.log(devolverVocalCantidad(devolverVocales("hola ea")));
 
 function cualTieneMasVocales(frase1, frase2) {
   let vocales = ["a", "A", "e", "E", "i", "I", "o", "O", "u", "U"];
