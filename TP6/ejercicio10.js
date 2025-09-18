@@ -4,7 +4,7 @@
 Llame a su función isEmpty, toma un parámetro y verifica si está vacío o no
 */
 function isEmpty(algo){
-    let arrayvacio = [];
+    
     if (algo === "" || algo === 0 || algo === false ){
         console.log(`su arguemto esta vacio (cadena vacía/cero/false)`);
         return;
@@ -22,10 +22,24 @@ function isEmpty(algo){
     }
 
 }
-isEmpty(`  `);
+isEmpty(`  `);//teoricamente tiene carcaters por ende no esta vacio 
 isEmpty(``);
 isEmpty(`aa`);
 isEmpty([]);
 isEmpty([1,2,3]);
 isEmpty();
 isEmpty(6);
+
+//if para objetos sacado de ia 
+/*
+ if (typeof algo === 'object') {
+        let tienePropiedades = false;
+        for (let prop in algo) {
+            tienePropiedades = true;
+            break;
+        }
+        if (!tienePropiedades) {
+            console.log("Está vacío (objeto vacío)");
+            return;
+        }
+*/

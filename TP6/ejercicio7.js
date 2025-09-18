@@ -30,7 +30,7 @@ function generateColors(cantidadDeColoresAGenerar){
     
     for (let i = 0; i < cantidadDeColoresAGenerar; i++){
         
-       console.log(`rgb(${rgbColorGenerator()})`);
+        console.log(`rgb(${rgbColorGenerator()})`);
        
         console.log(convertRgbToHexa(rgbColorGenerator()));
         

@@ -84,6 +84,24 @@ console.log(totalCarrito);
 numeros.sort((a,b) => a - b); //ordena de manor a mayor a+b seria de mayor a menor
 console.log(numeros);//es importante saber que este metodo es dedstructivo trasforma y modifica nuestro array original el resto del programa 
 
+//Con .splice() no solo se puede eliminar elementos del array,
+//  si no que también podemos extraerlos guardándolo en un nuevo array.
+//  ¡Ojo! que al hacer esto estaríamos modificando el array de origen.
+let vegetales = ["Repollo", "Nabo", "Rábano", "Zanahoria"];
+console.log(vegetales);
+// ["Repollo", "Nabo", "Rábano", "Zanahoria"]
+
+let pos = 1,
+  numElementos = 2;
+
+let elementosEliminados = vegetales.splice(pos, numElementos);
+// ["Nabo", "Rábano"] ==> Lo que se ha guardado en "elementosEliminados"
+
+console.log(vegetales);
+// ["Repollo", "Zanahoria"] ==> Lo que actualmente tiene "vegetales"
+let copiaArray = vegetales.slice();
+// ["Repollo", "Zanahoria"]; ==> Copiado en "copiaArray"
+
 /****MATH ****/
 
 const decimal1 = 1.25;
