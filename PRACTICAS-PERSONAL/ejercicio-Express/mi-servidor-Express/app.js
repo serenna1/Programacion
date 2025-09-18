@@ -1,11 +1,15 @@
 import express from "express";
+import usuariosRoutes from "./service/usuarios.js";
 
 const app = express();
+const port = 3000;
+
+app.use("/usuarios", usuariosRoutes);
 
 app.get("/", (req, res) => {
-  res.send("Esto es un get  ");
+  res.send("Bienvenidos a mi API");
 });
-const port = 3000;
+
 app.listen(port, () => {
   console.log("Api funcionando en http://localhost:" + port);
 });
