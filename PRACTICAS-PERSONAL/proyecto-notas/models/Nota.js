@@ -1,7 +1,7 @@
 /*
 define la clase nota 
 */
-export class formatoNotas {
+export class Nota {
   constructor(id, titulo, contenido) {
     this.id = id;
     this.titulo = titulo;

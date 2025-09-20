@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "titulo": "Título actualizado",
+    "contenido": "Contenido actualizado"
+  },
+  {
+    "id": 3,
+    "titulo": "Mi nueva nota",
+    "contenido": "Probando POST en Express"
+  }
+]
